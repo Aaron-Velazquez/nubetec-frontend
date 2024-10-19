@@ -1,0 +1,24 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "titulo": "Proyección de Línea de Siembra",
+            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
+            "imagen": "/img/proyeccion-linea-de-sombra.webp"
+        },
+        {
+            "id": 2,
+            "titulo": "Aplicacion de Tasa Variable",
+            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
+            "imagen": "/img/Aplicación-de-Tasa-Variable.webp"
+
+        },
+        {
+            "id": 3,
+            "titulo": "Curva de Nivel",
+            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
+            "imagen": "/img/curva-de-nivel.webp"
+
+        }
+    ]
+}
