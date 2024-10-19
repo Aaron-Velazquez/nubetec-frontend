@@ -6,15 +6,15 @@
         <p>Nubetec utiliza el dron T40 para servicios agrícolas avanzados.</p>
         <div class="pulverizacion-list">
             <div class="feature">
-                <img src="/public/img/alta capacidad.webp" alt="Plantas subiendo">
+                <img src="/img/alta capacidad.webp" alt="Plantas subiendo">
                 <span>Alta Capacidad</span>
             </div>
             <div class="feature">
-                <img src="/public/img/versatilidad.svg" alt="Dron pulverizando">
+                <img src="/img/versatilidad.svg" alt="Dron pulverizando">
                 <span>Versatilidad</span>
             </div>
             <div class="feature">
-                <img src="/public/img/eficiencia.svg" alt="Planta con gráfico de barras">
+                <img src="/img/eficiencia.svg" alt="Planta con gráfico de barras">
                 <span>Eficiencia Operativa</span>
             </div>
         </div>
@@ -22,7 +22,7 @@
     <servicios-cards></servicios-cards>
     <div class="mision">
         <figure class="img-movil">
-            <img src="/public/img/nuestra-mision-mobile.webp" alt="Collage de imágenes">
+            <img src="/img/nuestra-mision-mobile.webp" alt="Collage de imágenes">
         </figure>
         <div class="mision-text">
             <span>Nuestra Misión</span>
@@ -31,12 +31,12 @@
             <a href="">Conoce Más</a>
         </div>
         <figure class="img-pc">
-            <img src="/public/img/nuestra-mision-pc.webp" alt="Collage de imágenes">
+            <img src="/img/nuestra-mision-pc.webp" alt="Collage de imágenes">
         </figure>
     </div>
     <div class="cta-home">
         <figure class="img-movil">
-            <img src="/public/img/el-tipo-mobile.jpg" alt="Un Agrónomo mirando al horizonte">
+            <img src="/img/el-tipo-mobile.jpg" alt="Un Agrónomo mirando al horizonte">
         </figure>
         <div class="home-text">
             <span>Estamos esperando tu llamada</span>
@@ -45,7 +45,7 @@
             <a href="">Contactanos</a>
         </div>
         <figure class="img-pc">
-            <img src="/public/img/el tipo.webp" alt="Un Agrónomo mirando al horizonte">
+            <img src="/img/el tipo.webp" alt="Un Agrónomo mirando al horizonte">
         </figure>
     </div>
 </template>

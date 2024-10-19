@@ -51,7 +51,7 @@ onMounted(()=>{
             <div class="servicio-feature selected"
             @click = "seleccionar(1)">
                 <figure>
-                    <img src="/public/img/proyeccion.svg" alt="Manos con una planta">
+                    <img src="/img/proyeccion.svg" alt="Manos con una planta">
                 </figure>
                 <h4>Proyección de Línea de Siembra</h4>
                 <p>Te mostramos como se vería tu siembra</p>
@@ -60,14 +60,14 @@ onMounted(()=>{
             @click = "seleccionar(2)"
             >
                 <figure>
-                    <img src="/public/img/aplicacion.svg" alt="Dron pulverizando">
+                    <img src="/img/aplicacion.svg" alt="Dron pulverizando">
                 </figure>
                 <h4>Aplicacion de Tasa Variable</h4>
                 <p>Te mostramos como se vería tu siembra</p>
             </div>
             <div class="servicio-feature" @click = "seleccionar(3)">
                 <figure>
-                    <img src="/public/img/curva.svg" alt="Planta creciendo">
+                    <img src="/img/curva.svg" alt="Planta creciendo">
                 </figure>
                 <h4>Curva de Nivel</h4>
                 <p>Te mostramos como se vería tu siembra</p>

@@ -29,7 +29,7 @@ const props = defineProps({
 <template>
     <nav class="base-menu">
         <figure>
-            <img src="/public/img/logo color.svg" alt="Nubetec Logo">
+            <img src="/img/logo color.svg" alt="Nubetec Logo">
         </figure>
         <div class="menu-toggle" @click="toggleMenu">
             <span></span>

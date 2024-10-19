@@ -2,23 +2,23 @@
 
 <section class="valores">
     <div class="valor">
-        <img src="/public/img/personalizacion.svg" alt="Tuerca">
+        <img src="/img/personalizacion.svg" alt="Tuerca">
         <span>Personalización</span>
     </div>
     <div class="valor">
-        <img src="/public/img/innovacion.svg" alt="Tuerca">
+        <img src="/img/innovacion.svg" alt="Tuerca">
         <span>Innovación</span>
     </div>
     <div class="valor">
-        <img src="/public/img/sostenibilidad.svg" alt="Tuerca">
+        <img src="/img/sostenibilidad.svg" alt="Tuerca">
         <span>Sostenibilidad</span>
     </div>
     <div class="valor">
-        <img src="/public/img/colaboracion.svg" alt="Tuerca">
+        <img src="/img/colaboracion.svg" alt="Tuerca">
         <span>Colaboración</span>
     </div>
     <div class="valor">
-        <img src="/public/img/excelencia.svg" alt="Tuerca">
+        <img src="/img/excelencia.svg" alt="Tuerca">
         <span>Excelencia</span>
     </div>
 </section>
@@ -36,13 +36,13 @@
         </div>
     </div>
     <figure>
-        <img src="/public/img/mision-vision.webp" alt="Hoja con dron">
+        <img src="/img/mision-vision.webp" alt="Hoja con dron">
     </figure>
 </section>
 
 <section class="propuesta">
     <h3>Propuesta de valor</h3>
-    <img src="/public/img/propuesta-de-valor.webp" alt="Dron con plantaciones">
+    <img src="/img/propuesta-de-valor.webp" alt="Dron con plantaciones">
     <p>Fundada en 2024, Nubetec se dedica a ofrecer soluciones tecnológicas innovadoras para el sector agropecuario. Nos especializamos en el uso de drones para la pulverización y siembra, pero nuestro compromiso va más allá: estamos constantemente desarrollando nuevas soluciones que optimizan el trabajo en el campo.</p>
     <p>Nuestro equipo está compuesto por profesionales apasionados que colaboran estrechamente para cumplir y superar las expectativas de nuestros clientes. En Nubetec, trabajamos en conjunto para transformar la agricultura y ganadería, aportando eficiencia, precisión y sostenibilidad a cada proyecto. </p>
 </section>

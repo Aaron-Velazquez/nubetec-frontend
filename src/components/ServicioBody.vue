@@ -131,19 +131,19 @@ onUnmounted(() => {
 <template>
     <section class="servicios-cards">
         <div class="servicio-card">
-            <img src="/public/img/servicios.webp" alt="Persona controlando dron">
+            <img src="/img/servicios.webp" alt="Persona controlando dron">
             <h4>Proyección de Línea de Siembre</h4>
             <p>Te mostramos como se vería tu siembra</p>
             <a href="">Contactanos</a>
         </div>
         <div class="servicio-card">
-            <img src="/public/img/servicios.webp" alt="Persona controlando dron">
+            <img src="/img/servicios.webp" alt="Persona controlando dron">
             <h4>Proyección de Línea de Siembre</h4>
             <p>Te mostramos como se vería tu siembra</p>
             <a href="">Contactanos</a>
         </div>
         <div class="servicio-card">
-            <img src="/public/img/servicios.webp" alt="Persona controlando dron">
+            <img src="/img/servicios.webp" alt="Persona controlando dron">
             <h4>Proyección de Línea de Siembre</h4>
             <p>Te mostramos como se vería tu siembra</p>
             <a href="">Contactanos</a>
@@ -165,14 +165,14 @@ onUnmounted(() => {
           </ul>
         </div>
         <figure ref="dronCaracteristicas">
-          <img src="/public/img/moving-dron.png" alt="Dron T40">
+          <img src="/img/moving-dron.png" alt="Dron T40">
         </figure>
       </div>
       
       <!-- Sección de Beneficios -->
       <div class="t40-caracteristicas beneficios" ref="beneficios">
         <figure ref="dronBeneficios">
-          <img src="/public/img/moving-dron.png" alt="Dron T40">
+          <img src="/img/moving-dron.png" alt="Dron T40">
         </figure>
         <div class="caracteristicas-text">
           <h3>Beneficios del T40</h3>

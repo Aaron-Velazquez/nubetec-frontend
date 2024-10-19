@@ -3,11 +3,11 @@
 
 <template>
     <div class="imagenes">
-        <img src="/public/img/slider.webp" alt="Conjunto de imágenes de proceso de pulverización">
+        <img src="/img/slider.webp" alt="Conjunto de imágenes de proceso de pulverización">
     </div>
     <footer>
         <div class="logo">
-            <img src="../../../public/img/logo color.svg" alt="Nubetec Logo">
+            <img src="/img/logo color.svg" alt="Nubetec Logo">
             <h3>Nubetec</h3>
             <span>Pulverización y Sembrado</span>
             <p>Revoluciona tu campo con nuestros drones agrícolas.</p>
@@ -15,21 +15,21 @@
         <div class="nosotros">
             <h4>Nuestra Compañía</h4>
             <ul>
-                <li><img src="/public/img/hojita.svg" alt="Hoja"><a href="/servicios">Servicios</a></li>
-                <li><img src="/public/img/hojita.svg" alt="Hoja"><a href="/nosotros">Nosotros</a></li>
-                <li><img src="/public/img/hojita.svg" alt="Hoja"><a href="/contacto">Contacto</a></li>
+                <li><img src="/img/hojita.svg" alt="Hoja"><a href="/servicios">Servicios</a></li>
+                <li><img src="/img/hojita.svg" alt="Hoja"><a href="/nosotros">Nosotros</a></li>
+                <li><img src="/img/hojita.svg" alt="Hoja"><a href="/contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="contacto">
             <h4>Información de Contacto</h4>
-            <div class="direccion"><img src="/public/img/gps.svg" alt="GPS"><span>Av. Monseñor Rodriguez</span></div>
-            <div class="mail"><img src="/public/img/mail.svg" alt="Mail"><span>(0973)123-456</span></div>
+            <div class="direccion"><img src="/img/gps.svg" alt="GPS"><span>Av. Monseñor Rodriguez</span></div>
+            <div class="mail"><img src="/img/mail.svg" alt="Mail"><span>(0973)123-456</span></div>
             <div class="redes">
                 <h5>Síguenos</h5>
                 <figure>
-                    <img src="/public/img/instagram.svg" alt="Nubetec Instagram">
-                    <img src="/public/img/social.svg" alt="Nubetec Facebook">
-                    <img src="/public/img/whatsapp.svg" alt="Nubetec WhatsApp">
+                    <img src="/img/instagram.svg" alt="Nubetec Instagram">
+                    <img src="/img/social.svg" alt="Nubetec Facebook">
+                    <img src="/img/whatsapp.svg" alt="Nubetec WhatsApp">
                 </figure>
             </div>
         </div>
