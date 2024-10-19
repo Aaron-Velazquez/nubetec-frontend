@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import ServiciosCards from './ServiciosCards.vue'
+</script>
 
 <template>
     <div class="pulverizacion">
@@ -19,7 +21,7 @@
             </div>
         </div>
     </div>
-    <servicios-cards></servicios-cards>
+    <ServiciosCards></ServiciosCards>
     <div class="mision">
         <figure class="img-movil">
             <img src="/img/nuestra-mision-mobile.webp" alt="Collage de imágenes">
