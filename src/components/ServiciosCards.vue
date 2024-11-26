@@ -4,8 +4,8 @@ import { ref, onMounted } from 'vue';
 const servicios = ref([]);
 const selected = ref ({
             "id": 1,
-            "titulo": "Proyección de Línea de Siembra",
-            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
+            "titulo": "Servicios de Fotogrametría",
+            "parrafo": "Nuestros sistemas generan mapas, planos y modelos, brindando información valiosa para optimizar el manejo de cultivos y recursos.",
             "imagen": "/img/proyeccion-linea-de-sombra.webp"});
 
 const info = async () => {
@@ -51,26 +51,21 @@ onMounted(()=>{
             <div class="servicio-feature selected"
             @click = "seleccionar(1)">
                 <figure>
-                    <img src="/img/proyeccion.svg" alt="Manos con una planta">
+                    <img src="/img/fotogrametria.webp" alt="Manos con una planta">
                 </figure>
-                <h4>Proyección de Línea de Siembra</h4>
-                <p>Te mostramos como se vería tu siembra</p>
+                <h4>Servicios de Fotogrametría</h4>
+                <p>Brindamos información valiosa para optimizar el manejo de cultivos y recursos.</p>
+                <a href="#">Más información</a>
             </div>
             <div class="servicio-feature"
             @click = "seleccionar(2)"
             >
                 <figure>
-                    <img src="/img/aplicacion.svg" alt="Dron pulverizando">
+                    <img src="/img/pulverizacion.webp" alt="Dron pulverizando">
                 </figure>
-                <h4>Aplicacion de Tasa Variable</h4>
-                <p>Te mostramos como se vería tu siembra</p>
-            </div>
-            <div class="servicio-feature" @click = "seleccionar(3)">
-                <figure>
-                    <img src="/img/curva.svg" alt="Planta creciendo">
-                </figure>
-                <h4>Curva de Nivel</h4>
-                <p>Te mostramos como se vería tu siembra</p>
+                <h4>Servicios de Pulverización</h4>
+                <p>Optimiza la distribución de tus cultivos con líneas de siembra precisas y eficientes.</p>
+                <a href="#">Más información</a>
             </div>
         </div>
     </div>
@@ -105,7 +100,7 @@ onMounted(()=>{
 
 .servicios-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -115,6 +110,9 @@ onMounted(()=>{
     padding: 20px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.servicio-feature a{
+    display: none;
 }
 .servicio-feature:hover{
     cursor: pointer;
@@ -129,7 +127,7 @@ onMounted(()=>{
 }
 
 .servicio-feature figure {
-    background-color: white;
+    background-color: var(--strong-yellow);
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -156,8 +154,9 @@ onMounted(()=>{
     display: flex;
     align-items: center;
     max-width: 1000px;
+    border: #ddd 1px solid;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -223,16 +222,35 @@ onMounted(()=>{
         font-size: 0.95rem;
     }
     .servicios-cards{
+        margin: 10vh 0;
+        gap: 10vh;
         align-items: center;
         flex-direction: column;
     }
     .servicio-feature{
-        width: 70vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 17rem;
+        height: 17rem;
+    }
+    .servicio-feature a{
+        display: block;
+        color: #fff;
+        padding: 10px;
+        width: 11rem;
+        margin: 2vh auto;
+        background: var(--strong-yellow);   
+        border-radius: 6px;
+        font-weight: 600;  
+    }
+    .servicio-feature figure {
+        position: absolute;
+        transform: translateY(-200px) translateX(77px);
     }
     .curva-de-nivel{
-        width: 80vw;
-        text-align: center;
-        flex-direction: column;
+        display: none;
     }
 }
 

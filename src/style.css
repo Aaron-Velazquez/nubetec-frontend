@@ -4,7 +4,7 @@
     --main-font: 'Poppins', Sans-serif;
     --dark-green: rgb(32, 102, 92);
     --strong-yellow: #F9A72B;
-    --soft-green: #F7FFEF;
+    --soft-green: #8FB36A;
 }
 
 * {
@@ -15,7 +15,4 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--main-font);
-}
-body{
-    background-color: var(--soft-green);
 }

@@ -2,23 +2,16 @@
     "servicios": [
         {
             "id": 1,
-            "titulo": "Proyección de Línea de Siembra",
-            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
-            "imagen": "/img/proyeccion-linea-de-sombra.webp"
-        },
-        {
-            "id": 2,
-            "titulo": "Aplicacion de Tasa Variable",
-            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
+            "titulo": "Servicios de Fotogrametría",
+            "parrafo": "Nuestros sistemas generan mapas, planos y modelos, brindando información valiosa para optimizar el manejo de cultivos y recursos.",
             "imagen": "/img/Aplicación-de-Tasa-Variable.webp"
 
         },
         {
-            "id": 3,
-            "titulo": "Curva de Nivel",
-            "parrafo": "Las curvas de nivel son líneas imaginarias en un mapa que conectan puntos de igual elevación sobre el nivel del mar.",
-            "imagen": "/img/curva-de-nivel.webp"
-
+            "id": 2,
+            "titulo": "Servicios de Pulverización",
+            "parrafo": "Optimiza la distribución de tus cultivos con líneas de siembra precisas y eficientes.",
+            "imagen": "/img/proyeccion-linea-de-sombra.webp"
         }
     ]
 }

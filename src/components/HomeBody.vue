@@ -3,29 +3,8 @@ import ServiciosCards from './ServiciosCards.vue'
 </script>
 
 <template>
-    <div class="pulverizacion">
-        <h2>Pulverización y Siembra con Drones</h2>
-        <p>Nubetec utiliza el dron T40 para servicios agrícolas avanzados.</p>
-        <div class="pulverizacion-list">
-            <div class="feature">
-                <img src="/img/alta capacidad.webp" alt="Plantas subiendo">
-                <span>Alta Capacidad</span>
-            </div>
-            <div class="feature">
-                <img src="/img/versatilidad.svg" alt="Dron pulverizando">
-                <span>Versatilidad</span>
-            </div>
-            <div class="feature">
-                <img src="/img/eficiencia.svg" alt="Planta con gráfico de barras">
-                <span>Eficiencia Operativa</span>
-            </div>
-        </div>
-    </div>
     <ServiciosCards></ServiciosCards>
     <div class="mision">
-        <figure class="img-movil">
-            <img src="/img/nuestra-mision-mobile.webp" alt="Collage de imágenes">
-        </figure>
         <div class="mision-text">
             <span>Nuestra Misión</span>
             <h3>Impulsando la Revolución Agrotecnológica</h3>
@@ -33,7 +12,7 @@ import ServiciosCards from './ServiciosCards.vue'
             <a href="">Conoce Más</a>
         </div>
         <figure class="img-pc">
-            <img src="/img/nuestra-mision-pc.webp" alt="Collage de imágenes">
+            <img src="/img/mision-img.webp" alt="Collage de imágenes">
         </figure>
     </div>
     <div class="cta-home">
@@ -98,22 +77,26 @@ import ServiciosCards from './ServiciosCards.vue'
     font-size: 16px;
 }
 .mision {
+    background-color: var(--dark-green);
     display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 7vh auto;
+    width: 100%;
+    margin: 7vh 0;
     padding: 40px 20px;
+    gap: 2vw;
 }
 
 .mision-text {
-    flex: 1;
     padding-right: 40px;
-    color: var(--dark-green);
+    color: #fff;
+    width: 40vw;
 }
 
 .mision-text span {
     font-size: 18px;
-    font-weight: bold;
+    color: var(--strong-yellow);
+    font-weight: 600;
 }
 
 .mision-text h3 {
@@ -123,12 +106,11 @@ import ServiciosCards from './ServiciosCards.vue'
 }
 
 .mision-text h3 span {
-    color: var(--strong-yellow);
     display: block;
 }
 
 .mision-text p {
-    color: var(--dark-green);
+    text-align: justify;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -136,7 +118,7 @@ import ServiciosCards from './ServiciosCards.vue'
 
 .mision-text a {
     display: inline-block;
-    background-color: var(--strong-yellow);
+    background-color: var(--soft-green);
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -178,7 +160,7 @@ import ServiciosCards from './ServiciosCards.vue'
     margin: 15vh auto;
     border-radius: 12px;
     color: white;
-    background: url('/img/fondo-del-tipo-pc.webp');
+    background: url('/img/cta_img.webp');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -254,54 +236,11 @@ import ServiciosCards from './ServiciosCards.vue'
 }
 
 @media (max-width: 768px) {
-    .home-text {
-        width: 100%;
-        padding: 30px;
-    }
 
-    .cta-home figure {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        right: 0;
-        bottom: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .home-text {
-        width: 100%;
-        padding: 30px;
-    }
-
-    .cta-home figure {
-        position: relative;
-        width: 100%;
-        height: 300px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .mision {
-        flex-direction: column;
-    }
     
     .mision-text {
         padding-right: 0;
         margin-bottom: 30px;
-    }
-    
-    .mision-images {
-        width: 100%;
-    }
-    .cta-home {
-        padding: 30px;
-    }
-
-    .cta-home h3,
-    .cta-home p {
-        max-width: 100%;
     }
 
     .cta-home figure {
@@ -319,45 +258,37 @@ import ServiciosCards from './ServiciosCards.vue'
 
 @media screen and (max-width: 786px) {
 
-.pulverizacion h2{
-    font-size: 1.5rem;
-}
-.pulverizacion > p {
-    font-size: 1rem;
-}
-.pulverizacion-list {
-    flex-direction: column;
-}
-
 .mision{
     flex-direction: column;
     text-align: center;
-    width: 80vw;
     margin: 5vh auto 0 auto;
-    padding: 40px 20px 0 2px;
     font-size: 0.95rem;
 }
 .mision-text h3{
     font-size: 1.8rem;
 }
+.mision-text{
+    order: 2;
+    text-align: center;
+    width: 90vw;
+}
+.mision-text p{
+    text-align: center;
+}
 .mision figure{
-    width: 70vw;
-}
-.img-movil{
-    display: block;
-    margin: 2vh auto;
-}
-.img-movil img{
-    width: 100%;
+    width: 90vw;
 }
 .img-pc{
-    display: none;
+    order: 0;
+}
+.img-pc img{
+    width: 100%;  
 }
 .cta-home{
     flex-direction: column;
     gap: 3vh;
-    width: 90vw;
-    margin: 0 auto 5vh auto;
+    width: 100%;
+    margin: 10vh auto;
     height: auto;
     background: none;
     color: var(--dark-green);
@@ -365,7 +296,13 @@ import ServiciosCards from './ServiciosCards.vue'
 }
 .home-text {
     padding: 0;
+    order: 2;
     width: 80vw;
+}
+.cta-home figure{
+    border: 0;
+    background: url('/img/cta_img.webp');
+    width: 100%;
 }
 .cta-home figure img, .cta-home figure{
     overflow: hidden;

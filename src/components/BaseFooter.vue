@@ -7,7 +7,7 @@
     </div>
     <footer>
         <div class="logo">
-            <img src="/img/logo color.svg" alt="Nubetec Logo">
+            <img src="/img/logo blanco.svg" alt="Nubetec Logo">
             <h3>Nubetec</h3>
             <span>Pulverización y Sembrado</span>
             <p>Revoluciona tu campo con nuestros drones agrícolas.</p>
@@ -15,23 +15,23 @@
         <div class="nosotros">
             <h4>Nuestra Compañía</h4>
             <ul>
-                <li><img src="/img/hojita.svg" alt="Hoja"><a href="/servicios">Servicios</a></li>
-                <li><img src="/img/hojita.svg" alt="Hoja"><a href="/nosotros">Nosotros</a></li>
-                <li><img src="/img/hojita.svg" alt="Hoja"><a href="/contacto">Contacto</a></li>
+                <li><img src="/img/servicios_iconos.webp" alt="Hoja"><a href="/servicios">Servicios</a></li>
+                <li><img src="/img/servicios_iconos.webp" alt="Hoja"><a href="/nosotros">Nosotros</a></li>
+                <li><img src="/img/servicios_iconos.webp" alt="Hoja"><a href="/contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="contacto">
             <h4>Información de Contacto</h4>
-            <div class="direccion"><img src="/img/gps.svg" alt="GPS"><span>Av. Monseñor Rodriguez</span></div>
-            <div class="mail"><img src="/img/mail.svg" alt="Mail"><span>(0973)123-456</span></div>
-            <div class="redes">
-                <h5>Síguenos</h5>
-                <figure>
-                    <img src="/img/instagram.svg" alt="Nubetec Instagram">
-                    <img src="/img/social.svg" alt="Nubetec Facebook">
-                    <img src="/img/whatsapp.svg" alt="Nubetec WhatsApp">
-                </figure>
-            </div>
+            <div class="direccion"><img src="/img/ubicacion.webp" alt="GPS"><span>Av. Monseñor Rodriguez</span></div>
+            <div class="mail"><img src="/img/email.webp" alt="Mail"><span>(0973) 123-456</span></div>
+        </div>
+        <div class="redes">
+            <h5>Síguenos</h5>
+            <figure>
+                <img src="/img/instagram.svg" alt="Nubetec Instagram">
+                <img src="/img/facebook.svg" alt="Nubetec Facebook">
+                <img src="/img/whatsapp.svg" alt="Nubetec WhatsApp">
+            </figure>
         </div>
         <div class="desarrollador">
             <p>Desarrollado por <a href="https://conversa.com.py">conversa.com.py</a></p>
@@ -44,6 +44,8 @@
 .imagenes {
     width: 100%;
     overflow: hidden;
+    margin: 0;
+    transform: translateY(7px);
 }
 
 .imagenes img {
@@ -57,10 +59,12 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 30px;
-    color: var(--dark-green);
+    color: var(--strong-yellow);
+    background-color: var(--dark-green);
 }
 
 .logo {
+    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -97,7 +101,7 @@ footer {
 
 .nosotros ul li a {
     text-decoration: none;
-    color: var(--dark-green);
+    color: #fff;
 }
 .nosotros ul li a:hover {
     text-decoration: underline;
@@ -107,7 +111,7 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color: var(--dark-green);
+    color: #fff;
 }
 .contacto img{
     width: 20px;
@@ -125,10 +129,11 @@ div.redes{
 }
 .redes figure img{
     margin: 0 20px 0 0;
+    width: 25px;
 }
 .redes figure img:hover{
     cursor: pointer;
-    width: 25px;
+    width: 30px;
     transition: width 0.2s ease;
 }
 
@@ -137,10 +142,14 @@ div.redes{
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #ddd;
-    color: var(--dark-green);
+    color: #fff;
     font-size: 16px;
 }
+.desarrollador p a{
+    color: #fff;
+}
 .desarrollador p a:hover {
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -153,14 +162,15 @@ div.redes{
         width: 350%;
     }
     footer{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         padding: 20px;
     }
     .logo{
+        order: 0;
         padding-bottom: 2vh;
     }
     .logo img{
@@ -169,22 +179,37 @@ div.redes{
     .logo, .nosotros{
         border-bottom: 1px solid var(--dark-green) ;
     }
-    .contacto div{
+    .nosotros{
+        order: 2;
+    }
+    div.contacto{
         justify-content: center;
         margin: auto;
         width: 10rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        order: 3;
+    }
+    .redes h5{
+        display: none;
     }
     div.redes{
+        order: 1;
         align-items: center;
     }
     .redes figure img{
         margin: 0 4vw 0 4vw;
+        width: 35px;
     }
     .nosotros h4 {
         margin-bottom: 10px;
     }
     .contacto img:not(.redes img){
         display: none;
+    }
+    .desarrollador{
+        order: 5;
     }
 }
 

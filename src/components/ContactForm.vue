@@ -201,7 +201,6 @@ const errorMessage = ref('');
     border: none;
     border-bottom: 2px var(--dark-green) solid;
     outline: 0px solid transparent;
-    background: var(--soft-green);
 }
 .contacto-row input[type="text"], textarea,input[type="email"]{
  font-size: 1rem;
@@ -211,7 +210,6 @@ textarea.textArea{
     border: none;
     border-bottom: 2px var(--dark-green) solid;
     padding-bottom: 5vh;
-    background: var(--soft-green);
 
 }
 .form-row{
@@ -240,7 +238,8 @@ textarea.textArea{
 }
 .contacto-row input[type="submit"]:hover{
     cursor: pointer;
-    background: linear-gradient(rgba(0, 0, 0,95),rgba(0, 0, 0,0.75),rgba(0, 0, 0, 0.80));
+    background: var(--strong-yellow);
+    transition: background-color 0.3s ease;
 }
 .linea{
     transform: translateY(-5rem);
