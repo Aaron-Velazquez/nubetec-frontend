@@ -214,7 +214,7 @@ nav a {
       top: 60px;
       left: 0;
       width: 100%;
-      background-color: rgba(32, 102, 92, 0.9);
+      background-color: rgba(32, 102, 92);
       flex-direction: column;
       padding: 20px 0;
     }
