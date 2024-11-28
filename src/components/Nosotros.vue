@@ -8,8 +8,8 @@ import NosotrosBody from './NosotrosBody.vue';
 
     <BaseHeader
         header= "Nosotros"
-        descripcion="Contactanos para más información"
-        imagen="img/imagen-principal.webp">
+        descripcion="Nuestros Pilares Clave"
+        imagen="img/nosotros.webp">
     </BaseHeader>
     <NosotrosBody></NosotrosBody>
 </template>

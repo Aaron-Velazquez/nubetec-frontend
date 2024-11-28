@@ -301,7 +301,7 @@ import ServiciosCards from './ServiciosCards.vue'
 }
 .cta-home figure{
     border: 0;
-    background: url('/img/cta_img.webp');
+    background: url('/img/rectangulo_cel.webp');
     width: 100%;
 }
 .cta-home figure img, .cta-home figure{

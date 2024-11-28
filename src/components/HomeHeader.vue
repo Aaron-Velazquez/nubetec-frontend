@@ -44,7 +44,7 @@ const toggleMenu = () => {
 .main-container{
     height: 80vh;
     background: linear-gradient(rgba(32, 102, 92, 0.5), rgba(32, 102, 92, 0.5)), 
-    url('/img/DJI_T40 (1).webp') no-repeat center center;
+    url('/img/principal.webp') no-repeat center center;
     background-size: cover;
     padding: 0.1px;
 }

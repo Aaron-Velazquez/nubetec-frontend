@@ -199,36 +199,36 @@ onUnmounted(() => {
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
         <div class="servicio">
-          <span>Carta de Imagen del Establecimiento</span>
-          <p>Mapa detallado del predio con alta precisión, incluyendo referencias a todas las instalaciones y recursos.</p>
+          <span>Altimetría Referencial</span>
+          <p>Mapa topográfico de referencia del establecimiento</p>
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
         <div class="servicio">
-          <span>Carta de Imagen del Establecimiento</span>
-          <p>Mapa detallado del predio con alta precisión, incluyendo referencias a todas las instalaciones y recursos.</p>
+          <span>Mapa de Condición de Pasturas o Cultivos</span>
+          <p>Mapas que permiten visualizar el estado y calidad de las pasturas o cultivos.</p>
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
       </div>
       <div class="linea"></div>
       <div class="ser-col">
         <div class="servicio">
-          <span>Carta de Imagen del Establecimiento</span>
-          <p>Mapa detallado del predio con alta precisión, incluyendo referencias a todas las instalaciones y recursos.</p>
+          <span>Planimetría del Establecimiento</span>
+          <p>Te proporcionamos planos 2D del predio con alta precisión.</p>
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
         <div class="servicio">
-          <span>Carta de Imagen del Establecimiento</span>
-          <p>Mapa detallado del predio con alta precisión, incluyendo referencias a todas las instalaciones y recursos.</p>
+          <span>Mapas de Flujo de Drenajes</span>
+          <p>Mapas que muestran el flujo y drenaje del agua en el establecimiento.</p>
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
         <div class="servicio">
-          <span>Carta de Imagen del Establecimiento</span>
-          <p>Mapa detallado del predio con alta precisión, incluyendo referencias a todas las instalaciones y recursos.</p>
+          <span>Mapas Indicadores de Superficie</span>
+          <p>Mapas detallados de la superficie por parcelas y fracciones.</p>
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
         <div class="servicio">
-          <span>Carta de Imagen del Establecimiento</span>
-          <p>Mapa detallado del predio con alta precisión, incluyendo referencias a todas las instalaciones y recursos.</p>
+          <span>Mapas de Uso de Suelos</span>
+          <p>Mapas que identifican los diferentes usos del suelo en el predio.</p>
           <a href="#">Me interesa <img src="/img/flecha_amarilla.svg" alt="Flecha"></a>
         </div>
       </div>

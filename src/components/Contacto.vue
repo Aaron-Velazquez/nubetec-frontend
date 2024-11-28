@@ -8,8 +8,8 @@ import ContactoBody from './ContactForm.vue';
 
     <BaseHeader
     header= "Contacto"
-    descripcion="Contactanos para más información"
-    imagen="img/imagen-principal.webp"
+    descripcion="Estamos atentos a tu respuesta"
+    imagen="img/contacto_principal.webp"
 ></BaseHeader>
     <ContactoBody></ContactoBody>
 </template>

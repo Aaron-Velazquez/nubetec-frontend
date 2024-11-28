@@ -6,7 +6,7 @@ const selected = ref ({
             "id": 1,
             "titulo": "Servicios de Fotogrametría",
             "parrafo": "Nuestros sistemas generan mapas, planos y modelos, brindando información valiosa para optimizar el manejo de cultivos y recursos.",
-            "imagen": "/img/proyeccion-linea-de-sombra.webp"});
+            "imagen": "/img/servicio_fotogrametría.webp"});
 
 const info = async () => {
     try {
