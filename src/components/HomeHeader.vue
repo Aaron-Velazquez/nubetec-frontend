@@ -228,6 +228,9 @@ nav a {
     }
   
     nav ul .contacto {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
       margin-top: 10px;
     }
 }
