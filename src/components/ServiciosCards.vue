@@ -5,7 +5,7 @@ const servicios = ref([]);
 const selected = ref ({
             "id": 1,
             "titulo": "Servicios de Fotogrametría",
-            "parrafo": "Nuestros sistemas generan mapas, planos y modelos, brindando información valiosa para optimizar el manejo de cultivos y recursos.",
+            "parrafo": "Nuestros expertos analizan imágenes multiespectrales y RGB para proporcionar información detallada sobre su cultivo y así evaluar, planificar y optimizar el trabajo y producción.",
             "imagen": "/img/servicio_fotogrametría.webp"});
 
 const info = async () => {
@@ -64,7 +64,7 @@ onMounted(()=>{
                     <img src="/img/pulverizacion.webp" alt="Dron pulverizando">
                 </figure>
                 <h4>Servicios de Pulverización</h4>
-                <p>Optimiza la distribución de tus cultivos con líneas de siembra precisas y eficientes.</p>
+                <p>Optimiza cualquier tipo de aplicaciones en Agricultura para control de plagas, enfermedades, malezas, tratamientos específicos y fertilización.</p>
                 <a href="#">Más información</a>
             </div>
         </div>

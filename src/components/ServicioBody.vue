@@ -152,8 +152,8 @@ onUnmounted(() => {
     </section>
     <section class="servicio-pul">
       <div class="pul-text dos">
-        <h3>Aplicación de Tasa Variable</h3>
-        <span>Agricultura precisa y sostenible</span>
+        <h3>Aplicación a Tasa Variable</h3>
+        <span>Agricultura precisa</span>
         <p>Realizamos pulverización y siembra con precisión excepcional, cubriendo grandes extensiones de terreno de forma eficiente.
 
           Optimiza tus costos, mejora tus rendimientos y moderniza tu operación agrícola con Nubetec.</p>

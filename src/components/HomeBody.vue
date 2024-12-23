@@ -8,7 +8,7 @@ import ServiciosCards from './ServiciosCards.vue'
         <div class="mision-text">
             <span>Nuestra Misión</span>
             <h3>Impulsando la Revolución Agrotecnológica</h3>
-            <p>Impulsamos la innovación en la agricultura y ganadería con soluciones tecnológicas avanzadas y consultoría estratégica, creando valor para nuestros clientes y apoyando su transición hacia prácticas más eficientes, rentables y sostenibles.</p>
+            <p>Impulsamos la innovación en la agricultura y ganadería con soluciones tecnológicas avanzadas y consultoría estratégica, creando valor para nuestros clientes y apoyando su transición hacia prácticas más eficientes y rentables.</p>
             <a href="">Conoce Más</a>
         </div>
         <figure class="img-pc">
