@@ -22,8 +22,9 @@
         </div>
         <div class="contacto">
             <h4>Información de Contacto</h4>
-            <div class="direccion"><img src="/img/ubicacion.webp" alt="GPS"><span>Av. Monseñor Rodriguez</span></div>
-            <div class="mail"><img src="/img/email.webp" alt="Mail"><span>(0973) 123-456</span></div>
+            <div class="direccion"><img src="/img/ubicacion.webp" alt="GPS"><span>Centro comercial Paraná Country Club, Edificio Jeane Paris oficina 5</span></div>
+            <div class="mail"><img src="/img/email.webp" alt="Mail"><span>belen@nubetec.com.py</span></div>
+            <div class="mail"><img src="/img/telefono.svg" alt="Teléfono"><span>+595992264576</span></div>
         </div>
         <div class="redes">
             <h5>Síguenos</h5>
