@@ -30,7 +30,7 @@
             <h5>Síguenos</h5>
             <figure>
                 <img src="/img/instagram.svg" alt="Nubetec Instagram" onclick="window.open('https://www.instagram.com/nubetec.py?igsh=MWtuMDVnNDZxNzI3ag==')">
-                <img src="/img/facebook.svg" alt="Nubetec Facebook" onclick="window.open('https://www.facebook.com/profile.php?id=61558683246089&mibextid=ZbWKwL')">
+                <img src="/img/facebook.svg" alt="Nubetec Facebook" onclick="window.open('https://www.facebook.com/share/FnbZKxwbDoAEDZZ5/')">
                 <img src="/img/whatsapp.svg" alt="Nubetec WhatsApp" onclick="window.open('https://wa.me/595992264576')">
             </figure>
         </div>
