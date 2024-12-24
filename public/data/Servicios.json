@@ -4,14 +4,16 @@
             "id": 1,
             "titulo": "Servicios de Fotogrametría",
             "parrafo": "Nuestros expertos analizan imágenes multiespectrales y RGB para proporcionar información detallada sobre su cultivo y así evaluar, planificar y optimizar el trabajo y producción.",
-            "imagen": "/img/servicio_fotogrametría.webp"
+            "imagen": "/img/servicio_fotogrametría.webp",
+            "link": "/servicios#fotogrametria"
 
         },
         {
             "id": 2,
             "titulo": "Servicios de Pulverización",
             "parrafo": "Optimiza la distribución de tus cultivos con líneas de siembra precisas y eficientes.",
-            "imagen": "/img/pulverizacion_info.webp"
+            "imagen": "/img/pulverizacion_info.webp",
+            "link": "/servicios#pulverizacion"
         }
     ]
 }

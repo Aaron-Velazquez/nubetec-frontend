@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rLoteDE><rDE xmlns="http://ekuatia.set.gov.py/sifen/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd siRecepDE_v150.xsd">
+    <dVerFor>150</dVerFor>
+    <DE Id="01800840860001001379939822024122018624437359">
+        <dDVId>9</dDVId>
+        <dFecFirma>2024-12-22T03:21:25</dFecFirma>
+        <dSisFact>1</dSisFact>
+        <gOpeDE>
+            <iTipEmi>1</iTipEmi>
+            <dDesTipEmi>Normal</dDesTipEmi>
+            <dCodSeg>862443735</dCodSeg>
+        </gOpeDE>
+        <gTimb>
+            <iTiDE>1</iTiDE>
+            <dDesTiDE>Factura electrónica</dDesTiDE>
+            <dNumTim>15133276</dNumTim>
+            <dEst>001</dEst>
+            <dPunExp>001</dPunExp>
+            <dNumDoc>3799398</dNumDoc>
+            <dFeIniT>2021-09-29</dFeIniT>
+        </gTimb>
+        <gDatGralOpe>
+            <dFeEmiDE>2024-12-20T16:20:53</dFeEmiDE>
+            <gOpeCom>
+                <iTipTra>2</iTipTra>
+                <dDesTipTra>Prestación de servicios</dDesTipTra>
+                <iTImp>1</iTImp>
+                <dDesTImp>IVA</dDesTImp>
+                <cMoneOpe>PYG</cMoneOpe>
+                <dDesMoneOpe>Guarani</dDesMoneOpe>
+            </gOpeCom>
+            <gEmis>
+                <dRucEm>80084086</dRucEm>
+                <dDVEmi>0</dDVEmi>
+                <iTipCont>2</iTipCont>
+                <cTipReg>8</cTipReg>
+                <dNomEmi>GRUPO M SOCIEDAD ANONIMA</dNomEmi>
+                <dNomFanEmi>GRUPO M SOCIEDAD ANONIMA</dNomFanEmi>
+                <dDirEmi>Avda. Aviadores del Chaco</dDirEmi>
+                <dNumCas>3725</dNumCas>
+                <dCompDir1>Juez Pino</dCompDir1>
+                <dCompDir2>Dr. González</dCompDir2>
+                <cDepEmi>1</cDepEmi>
+                <dDesDepEmi>CAPITAL</dDesDepEmi>
+                <cDisEmi>1</cDisEmi>
+                <dDesDisEmi>ASUNCION (DISTRITO)</dDesDisEmi>
+                <cCiuEmi>1</cCiuEmi>
+                <dDesCiuEmi>ASUNCION (DISTRITO)</dDesCiuEmi>
+                <dTelEmi>0217290079</dTelEmi>
+                <dEmailE>blas@pagopar.com</dEmailE>
+                <dDenSuc>GRUPO M CENTRAL</dDenSuc>
+                <gActEco>
+                    <cActEco>46109</cActEco>
+                    <dDesActEco>COMERCIO AL POR MAYOR DE MERCANCÍAS N.C.P. A CAMBIO DE UNA RETRIBUCIÓN O POR CONTRATA</dDesActEco>
+                </gActEco>
+            </gEmis>
+            <gDatRec>
+                <iNatRec>2</iNatRec>
+                <iTiOpe>2</iTiOpe>
+                <cPaisRec>PRY</cPaisRec>
+                <dDesPaisRe>Paraguay</dDesPaisRe>
+                <iTipIDRec>1</iTipIDRec>
+                <dDTipIDRec>Cédula paraguaya</dDTipIDRec>
+                <dNumIDRec>6514606</dNumIDRec>
+                <dNomRec>Aaron Velazquez</dNomRec>
+                <dNomFanRec>Aaron Velazquez</dNomFanRec>
+                <dNumCasRec>1</dNumCasRec>
+                <cDepRec>1</cDepRec>
+                <dDesDepRec>CAPITAL</dDesDepRec>
+                <cDisRec>1</cDisRec>
+                <dDesDisRec>ASUNCION (DISTRITO)</dDesDisRec>
+                <cCiuRec>1</cCiuRec>
+                <dDesCiuRec>ASUNCION (DISTRITO)</dDesCiuRec>
+                <dEmailRec>aaronv152@gmail.com</dEmailRec>
+            </gDatRec>
+        </gDatGralOpe>
+        <gDtipDE>
+            <gCamFE>
+                <iIndPres>1</iIndPres>
+                <dDesIndPres>Operación presencial</dDesIndPres>
+            </gCamFE>
+            <gCamCond>
+                <iCondOpe>1</iCondOpe>
+                <dDCondOpe>Contado</dDCondOpe>
+                <gPaConEIni>
+                    <iTiPago>1</iTiPago>
+                    <dDesTiPag>Efectivo</dDesTiPag>
+                    <dMonTiPag>32086.0000</dMonTiPag>
+                    <cMoneTiPag>PYG</cMoneTiPag>
+                    <dDMoneTiPag>Guarani</dDMoneTiPag>
+                </gPaConEIni>
+            </gCamCond>
+            <gCamItem>
+                <dCodInt>4</dCodInt>
+                <dDesProSer>Envío productos. Pedido # 10307646</dDesProSer>
+                <cUniMed>77</cUniMed>
+                <dDesUniMed>UNI</dDesUniMed>
+                <dCantProSer>1.0000</dCantProSer>
+                <gValorItem>
+                    <dPUniProSer>32086.00000000</dPUniProSer>
+                    <dTotBruOpeItem>32086.00000000</dTotBruOpeItem>
+                    <gValorRestaItem>
+                        <dTotOpeItem>32086.00000000</dTotOpeItem>
+                    </gValorRestaItem>
+                </gValorItem>
+                <gCamIVA>
+                    <iAfecIVA>1</iAfecIVA>
+                    <dDesAfecIVA>Gravado IVA</dDesAfecIVA>
+                    <dPropIVA>100.00000000</dPropIVA>
+                    <dTasaIVA>10</dTasaIVA>
+                    <dBasGravIVA>29169.09000000</dBasGravIVA>
+                    <dLiqIVAItem>2916.90900000</dLiqIVAItem>
+                    <dBasExe>0.00000000</dBasExe>
+                </gCamIVA>
+            </gCamItem>
+        </gDtipDE>
+        <gTotSub>
+            <dSubExe>0.00000000</dSubExe>
+            <dSub5>0.00000000</dSub5>
+            <dSub10>32086.00000000</dSub10>
+            <dTotOpe>32086.00000000</dTotOpe>
+            <dTotDesc>0.00000000</dTotDesc>
+            <dTotDescGlotem>0.00000000</dTotDescGlotem>
+            <dTotAntItem>0.00000000</dTotAntItem>
+            <dTotAnt>0.00000000</dTotAnt>
+            <dPorcDescTotal>0.00000000</dPorcDescTotal>
+            <dDescTotal>0.00000000</dDescTotal>
+            <dAnticipo>0.00000000</dAnticipo>
+            <dRedon>0.0000</dRedon>
+            <dTotGralOpe>32086.00000000</dTotGralOpe>
+            <dIVA5>0.00000000</dIVA5>
+            <dIVA10>2916.91000000</dIVA10>
+            <dTotIVA>2916.91000000</dTotIVA>
+            <dBaseGrav5>0.00000000</dBaseGrav5>
+            <dBaseGrav10>29169.09000000</dBaseGrav10>
+            <dTBasGraIVA>29169.09000000</dTBasGraIVA>
+        </gTotSub>
+    </DE>
+
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#01800840860001001379939822024122018624437359"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>E0BWlPm2y5zHdnUcGwB4cGqJ1ZUYQuT559xKr7+yO44=</DigestValue></Reference></SignedInfo><SignatureValue>XVcL3PnHMgngmqjb6j1PoEiaEsAXRJOafqVfLJGCzovnbYswFt1oRgcupOPfjuVcNjP2lBViRqD/prTFreoYIkJ30ADRjqxYfQHrhnr/619TM6mY65Bb9P10Xm/A+7XXLgaHGqHgAHpSp1M5C3rPUMEJRpO/mSHq/XY7fKApi99ofDTgTxmqNyW9r/xqdlMVW1IkmADcAQqEY6tco/BmriTl505zvcg4i9dTiMTbJBg8TLt9vWwz916xAtoIcrw/iHoB/L4IVxSZQNV9uhU+e2dEiQRtgdmX9cujihn0djXBxmSWuOleWjSLut7IPfQApWdiFmh74ikN4UM2Sxi0Dw==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature>
+	<gCamFuFD>
+		<dCarQR>https://ekuatia.set.gov.py/consultas/qr?nVersion=150&amp;Id=01800840860001001379939822024122018624437359&amp;dFeEmiDE=323032342d31322d32305431363a32303a3533&amp;dNumIDRec=6514606&amp;dTotGralOpe=32086.00000000&amp;dTotIVA=2916.91000000&amp;cItems=1&amp;DigestValue=453042576c506d3279357a48646e5563477742346347714a315a5559517554353539784b72372b794f34343d&amp;IdCSC=0001&amp;cHashQR=0d75d0361ff036467742b51e231b07f3ce2d4bc8620e36f75fbe52b61608f886</dCarQR>
+	</gCamFuFD>
+</rDE>
+	</rLoteDE>

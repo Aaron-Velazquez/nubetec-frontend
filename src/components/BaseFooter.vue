@@ -22,16 +22,16 @@
         </div>
         <div class="contacto">
             <h4>Información de Contacto</h4>
-            <div class="direccion"><img src="/img/ubicacion.webp" alt="GPS"><span>Centro comercial Paraná Country Club, Edificio Jeane Paris oficina 5</span></div>
-            <div class="mail"><img src="/img/email.webp" alt="Mail"><span>belen@nubetec.com.py</span></div>
-            <div class="mail"><img src="/img/telefono.svg" alt="Teléfono"><span>+595992264576</span></div>
+            <div class="direccion" onclick="window.location.href='https://g.co/kgs/1bJY9ny'"><img src="/img/ubicacion.webp" alt="GPS"><span>Centro comercial Paraná Country Club, Edificio Jeane Paris oficina 5</span></div>
+            <div class="mail"  onclick="window.location.href='mailto:belen@nubetec.com.py'"><img src="/img/email.webp" alt="Mail"><span>belen@nubetec.com.py</span></div>
+            <div class="telefono" onclick="window.location.href='tel:+595992264576'" ><img src="/img/telefono.svg" alt="Teléfono"><span>+595992264576</span></div>
         </div>
         <div class="redes">
             <h5>Síguenos</h5>
             <figure>
-                <img src="/img/instagram.svg" alt="Nubetec Instagram">
-                <img src="/img/facebook.svg" alt="Nubetec Facebook">
-                <img src="/img/whatsapp.svg" alt="Nubetec WhatsApp">
+                <img src="/img/instagram.svg" alt="Nubetec Instagram" onclick="window.open('https://www.instagram.com/nubetec.py?igsh=MWtuMDVnNDZxNzI3ag==')">
+                <img src="/img/facebook.svg" alt="Nubetec Facebook" onclick="window.open('https://www.facebook.com/profile.php?id=61558683246089&mibextid=ZbWKwL')">
+                <img src="/img/whatsapp.svg" alt="Nubetec WhatsApp" onclick="window.open('https://wa.me/595992264576')">
             </figure>
         </div>
         <div class="desarrollador">
@@ -113,6 +113,9 @@ footer {
     align-items: center;
     margin-bottom: 10px;
     color: #fff;
+}
+.contacto div:hover{
+    cursor: pointer;
 }
 .contacto img{
     width: 20px;

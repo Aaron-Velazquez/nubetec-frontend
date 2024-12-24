@@ -9,7 +9,7 @@ import ServiciosCards from './ServiciosCards.vue'
             <span>Nuestra Misión</span>
             <h3>Impulsando la Revolución Agrotecnológica</h3>
             <p>Impulsamos la innovación en la agricultura y ganadería con soluciones tecnológicas avanzadas y consultoría estratégica, creando valor para nuestros clientes y apoyando su transición hacia prácticas más eficientes y rentables.</p>
-            <a href="">Conoce Más</a>
+            <a href="/nosotros">Conoce Más</a>
         </div>
         <figure class="img-pc">
             <img src="/img/mision-img.webp" alt="Collage de imágenes">
@@ -23,7 +23,7 @@ import ServiciosCards from './ServiciosCards.vue'
             <span>Estamos esperando tu llamada</span>
             <h3>Explora nuestros planes y conoce sobre nuestra organización</h3>
             <p>Nubetec utiliza el T40 para brindar soluciones agrícolas innovadoras, precisas y eficientes.</p>
-            <a href="">Contactanos</a>
+            <a href="/contacto">Contactanos</a>
         </div>
         <figure class="img-pc">
             <img src="/img/el tipo.webp" alt="Un Agrónomo mirando al horizonte">

@@ -6,7 +6,8 @@ const selected = ref ({
             "id": 1,
             "titulo": "Servicios de Fotogrametría",
             "parrafo": "Nuestros expertos analizan imágenes multiespectrales y RGB para proporcionar información detallada sobre su cultivo y así evaluar, planificar y optimizar el trabajo y producción.",
-            "imagen": "/img/servicio_fotogrametría.webp"});
+            "imagen": "/img/servicio_fotogrametría.webp",
+            "link": "/servicios#fotogrametria"});
 
 const info = async () => {
     try {
@@ -51,11 +52,11 @@ onMounted(()=>{
             <div class="servicio-feature selected"
             @click = "seleccionar(1)">
                 <figure>
-                    <img src="/img/fotogrametria.webp" alt="Manos con una planta">
+                    <img src="/img/fotogrametria.webp" alt="Icon de planta">
                 </figure>
                 <h4>Servicios de Fotogrametría</h4>
                 <p>Brindamos información valiosa para optimizar el manejo de cultivos y recursos.</p>
-                <a href="#">Más información</a>
+                <a href="/servicios#fotogrametria">Más información</a>
             </div>
             <div class="servicio-feature"
             @click = "seleccionar(2)"
@@ -64,8 +65,8 @@ onMounted(()=>{
                     <img src="/img/pulverizacion.webp" alt="Dron pulverizando">
                 </figure>
                 <h4>Servicios de Pulverización</h4>
-                <p>Optimiza cualquier tipo de aplicaciones en Agricultura para control de plagas, enfermedades, malezas, tratamientos específicos y fertilización.</p>
-                <a href="#">Más información</a>
+                <p>Optimiza las aplicaciones en Agricultura para control de plagas, enfermedades, malezas, tratamientos específicos y fertilización.</p>
+                <a href="/servicios#pulverizacion">Más información</a>
             </div>
         </div>
     </div>
@@ -76,7 +77,7 @@ onMounted(()=>{
         <div class="curva-text">
             <h3>{{selected.titulo}}</h3>
             <p>{{selected.parrafo}}</p>
-            <a href="/servicios">Más información</a>
+            <a :href="selected.link">Más información</a>
         </div>
     </div>
 </template>
@@ -227,13 +228,16 @@ onMounted(()=>{
         align-items: center;
         flex-direction: column;
     }
+    .servicios-cards div:first-child{
+        height: 17rem;
+    }
     .servicio-feature{
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         width: 17rem;
-        height: 17rem;
+        height: 19rem;
     }
     .servicio-feature a{
         display: block;
@@ -247,7 +251,10 @@ onMounted(()=>{
     }
     .servicio-feature figure {
         position: absolute;
-        transform: translateY(-200px) translateX(77px);
+        transform: translateY(-160px) translateX(77px);
+    }
+    .servicios-cards div:first-child figure{
+        transform: translateY(-140px) translateX(77px);
     }
     .curva-de-nivel{
         display: none;

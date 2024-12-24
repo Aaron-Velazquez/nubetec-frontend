@@ -14,7 +14,7 @@ const toggleMenu = () => {
 
     <div class="main-container">
         <nav class="main-menu">
-          <figure>
+          <figure onclick="window.location.href='/'">
             <img src="/img/logo blanco.svg" alt="Nubetec Logo">
           </figure>
           <div class="menu-toggle" @click="toggleMenu">
@@ -33,7 +33,7 @@ const toggleMenu = () => {
         <main class="main-header">
           <h1>Bienvenidos a <b>Nubetec</b></h1>
           <p>Transformando el Campo con Tecnología de Vanguardia</p>
-          <a href="">¡Empieza Ya!</a>
+          <a href="/contacto">¡Empieza Ya!</a>
         </main>
       </div>
 
@@ -58,6 +58,9 @@ nav.main-menu {
 }
 .main-menu figure {
     width: 60px;
+}
+.main-menu figure img {
+    cursor: pointer;
 }
 .main-menu ul {
     display: flex;

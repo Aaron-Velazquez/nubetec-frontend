@@ -28,7 +28,7 @@ const props = defineProps({
 
 <template>
     <nav class="base-menu">
-        <figure>
+        <figure onclick="window.location.href='/'">
             <img src="/img/logo color.svg" alt="Nubetec Logo">
         </figure>
         <div class="menu-toggle" @click="toggleMenu">
@@ -59,6 +59,9 @@ nav.base-menu {
 }
 .base-menu figure {
     width: 60px;
+}
+.base-menu figure{
+    cursor: pointer;
 }
 .base-menu ul {
     display: flex;
