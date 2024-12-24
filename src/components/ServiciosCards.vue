@@ -5,20 +5,20 @@
   
       <div class="servicios-cards">
         <!-- Tarjeta 1 -->
-        <div
+        <div 
           class="servicio-feature selected"
           @click="seleccionar(1)"
         >
           <figure>
-            <img src="/img/fotogrametria.webp" alt="Icon de planta" />
+            <img src="/img/fotogrametria.webp" alt="Icono de planta" />
           </figure>
           <h4>Servicios de Fotogrametría</h4>
           <p>Brindamos información valiosa para optimizar el manejo de cultivos y recursos.</p>
           <a href="/servicios#fotogrametria">Más información</a>
         </div>
   
-        <!-- Tarjeta 2 (Pulverización) con tooltip que desaparecerá al hacer clic -->
-        <div
+        <!-- Tarjeta 2 (Pulverización) con tooltip controlado por localStorage -->
+        <div 
           class="servicio-feature"
           @click="seleccionar(2)"
         >
@@ -28,10 +28,9 @@
           <h4>Servicios de Pulverización</h4>
           <p>Optimiza las aplicaciones en Agricultura para control de plagas, enfermedades, malezas, tratamientos específicos y fertilización.</p>
   
-          <!-- Tooltip que indica que esta tarjeta es seleccionable
-               Aparece únicamente si showIconPulverizacion es true. -->
-          <span
-            v-if="showIconPulverizacion"
+          <!-- Tooltip: se muestra si showIconPulverizacion es true -->
+          <span 
+            v-if="showIconPulverizacion" 
             class="tooltip-dialog"
           >
             Selecciona para obtener más información
@@ -70,10 +69,10 @@
     link: '/servicios#fotogrametria'
   });
   
-  // Controla la visualización del tooltip en la segunda tarjeta
+  // Variable para mostrar/ocultar el tooltip de la segunda tarjeta
   const showIconPulverizacion = ref(true);
   
-  // Carga de datos (opcional, si existe data/Servicios.json)
+  // Función para cargar datos (si tienes un archivo data/Servicios.json)
   const info = async () => {
     try {
       const response = await fetch('data/Servicios.json');
@@ -84,19 +83,18 @@
         console.error('404: No se encontró el archivo.');
       }
     } catch (error) {
-      console.error('Error: ', error);
+      console.error('Error al cargar los datos: ', error);
     }
   };
   
+  // Función para gestionar la selección de un servicio
   const seleccionar = (id) => {
-    // Asigna el servicio según el ID
-    selected.value = servicios.value.find((serv) => serv.id === id) || null;
+    selected.value = servicios.value.find(serv => serv.id === id) || null;
   
     // Resalta la tarjeta seleccionada
     const items = document.querySelectorAll('.servicio-feature');
     let sw = 0, c = 0;
     items.forEach((item) => {
-      // Ajustar esta lógica si cambias la estructura de servicios
       if ((id === 1 && c === 0) || (id === 2 && c === 1) || (id === 3 && c === 2)) {
         if (sw === 0) {
           items[c].classList.add('selected');
@@ -108,14 +106,23 @@
       c++;
     });
   
-    // Al hacer clic en la segunda tarjeta (id = 2), se esconde el tooltip
+    // Si el usuario hace clic en la segunda tarjeta, oculta el tooltip y guarda la preferencia
     if (id === 2) {
       showIconPulverizacion.value = false;
+      localStorage.setItem('tooltipHidePulverizacion', 'true');
     }
   };
   
   onMounted(() => {
-    info(); // Carga los servicios si existe el JSON
+    // Carga los servicios (opcional)
+    info();
+    
+    // Verifica si el usuario ya ocultó el tooltip antes
+    const hideTooltip = localStorage.getItem('tooltipHidePulverizacion');
+    // Si existe y es 'true', deshabilita el tooltip
+    if (hideTooltip === 'true') {
+      showIconPulverizacion.value = false;
+    }
   });
   </script>
   
@@ -137,14 +144,14 @@
     margin-bottom: 30px;
   }
   
-  /* Contenedor de las 2 tarjetas */
+  /* Contenedor de tarjetas */
   .servicios-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
   
-  /* Tarjeta base */
+  /* Estilo base de cada tarjeta */
   .servicio-feature {
     background-color: #c5e1a5;
     border-radius: 10px;
@@ -152,11 +159,11 @@
     width: 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
-    position: relative; /* Para posicionar el tooltip con absolute */
+    position: relative; /* Necesario para posicionar el tooltip */
   }
   
   .servicio-feature a {
-    display: none; /* Aparece en responsive */
+    display: none;
   }
   
   .servicio-feature:hover {
@@ -170,7 +177,7 @@
     box-shadow: 2px 2px 2px #779688;
   }
   
-  /* Tooltip: pequeño cuadro de diálogo */
+  /* Tooltip de la segunda tarjeta */
   .tooltip-dialog {
     position: absolute;
     bottom: 10px;
@@ -185,7 +192,7 @@
     transform: translateX(100px) translateY(-250px);
   }
   
-  /* Figura e imagen dentro de la tarjeta */
+  /* Imagen y figura */
   .servicio-feature figure {
     background-color: var(--strong-yellow);
     border-radius: 50%;
@@ -324,7 +331,7 @@
     }
   
     .curva-de-nivel {
-      display: none; /* Ocúltalo en móvil si prefieres */
+      display: none; /* Ocultar en móvil si prefieres */
     }
   }
   </style>
