@@ -128,7 +128,7 @@
   
   <style scoped>
   .servicios {
-    max-width: 1000px;
+    width: 75vw;
     margin: 5vh auto;
     padding: 20px;
     color: var(--dark-green);
@@ -222,7 +222,7 @@
   .curva-de-nivel {
     display: flex;
     align-items: center;
-    max-width: 1000px;
+    max-width: 80vw;
     border: #ddd 1px solid;
     margin: 0 auto;
     background-color: #fff;
@@ -274,6 +274,62 @@
   
   .curva-text a:hover {
     background-color: #ff8c00;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .servicios {
+      /* Ajusta el ancho para tablets */
+      width: 85vw;
+    }
+  
+    .servicios h3 {
+      font-size: 2rem;
+    }
+  
+    .servicios > p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    /* Mantén un diseño con dos columnas para que no quede tan apilado */
+    .servicios-cards {
+      display: flex;
+      flex-wrap: wrap;        /* Permite que las tarjetas se ajusten */
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .servicio-feature {
+      width: 45%;             /* Dos tarjetas por fila en tablets */
+      margin: 0 auto;
+    }
+  
+    .servicio-feature figure {
+      position: static;       /* Quitamos posición absoluta en tablets */
+      transform: none;        /* Sin transform para que quede normal */
+      margin: 1rem 0;         /* Ajuste de espacio */
+      width: 70px;            /* Ajusta tamaño del contenedor de la imagen */
+      height: 70px;
+    }
+  
+    .servicio-feature img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    /* Ajustes para la sección de detalle */
+    .curva-de-nivel {
+      display: flex;
+      flex-direction: row;
+      max-width: 90vw;
+      margin: 0 auto;
+    }
+    .curva-text {
+      padding: 20px;
+    }
+  
+    .curva-text h3 {
+      font-size: 24px;
+    }
   }
   
   /* Responsive */

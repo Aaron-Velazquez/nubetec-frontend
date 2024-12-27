@@ -70,7 +70,6 @@ nav.main-menu {
 }
 nav ul .contacto {
     padding: 5px 13px;
-    font-weight: 600;
     font-weight: 500;
     color: #fff;
     border-radius: 12px;
@@ -127,7 +126,7 @@ nav a {
     }
   
     nav.main-menu {
-      margin: 0 5vw;  
+      width: 90vw;  
       justify-content: space-between;
       align-items: center;
     }

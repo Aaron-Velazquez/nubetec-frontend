@@ -1,132 +1,4 @@
-<script setup>
 
-import { onMounted, ref, onUnmounted } from 'vue';
-import Swiper from 'swiper';
-import { Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { gsap } from 'gsap';  
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
-// Referencias a los elementos DOM
-const caracteristicas = ref(null);
-const dronCaracteristicas = ref(null);
-const beneficios = ref(null);
-const dronBeneficios = ref(null);
-
-const servicios = [
-  {
-    titulo: 'Carta de Imagen',
-    descripcion: 'Mapa digital que muestra todas las instalaciones y recursos de tu establecimiento.',
-    imagen: 'img/carta-de-imagen.webp'
-  },
-  {
-    titulo: 'Altimetría',
-    descripcion: 'Análisis de elevaciones y desniveles del terreno para optimizar el manejo del agua.',
-    imagen: 'img/mapa-de-condicion.svg'
-  },
-  {
-    titulo: 'Mapa de Condición',
-    descripcion: 'Mapa digital que muestra todas las instalaciones y recursos de tu establecimiento.',
-    imagen: 'img/animetria.svg'
-  },
-  {
-    titulo: 'Carta de Imagen',
-    descripcion: 'Mapa digital que muestra todas las instalaciones y recursos de tu establecimiento.',
-    imagen: 'img/altimetria.svg'
-  },
-];
-
-let tl = null;
-
-onMounted(() => {
-
-  tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: caracteristicas.value,
-      start: 'top 50%',
-      end: 'bottom top',
-      scrub: true, // Sincroniza la animación con el scroll
-      markers: false,
-    },
-  });
-
-  // 1. Desvanecer la sección de características
-  tl.to(caracteristicas.value, {
-    opacity: 0, 
-    duration: 2,
-    ease: 'power2.out',
-  }, 1);
-
-  // 2. Desplazar el dron hacia la izquierda
-  tl.from(dronCaracteristicas.value, {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    ease: 'power2.out',
-  }, 0); 
-
-  // 3. Aparecer la sección de beneficios desde la derecha
-  tl.to(beneficios.value, {
-    opacity: 1,
-    x: 0,
-    duration: 1,
-    ease: 'power2.out',
-  }, 1);
-
-  // 4. Desplazar el dron en beneficios hacia la izquierda
-  tl.from(dronBeneficios.value, {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    ease: 'power2.out',
-  }, 1);
-});
-
-
-onMounted(()=>{
-  new Swiper('.swiper', {
-    modules: [Pagination, Autoplay],
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 15
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-    },
-  });
-})
-
-// Limpieza de ScrollTriggers y timelines al desmontar el componente
-onUnmounted(() => {
-  if (tl) {
-    tl.kill();
-  }
-  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-});
-
-</script>
 
 <template>
 
@@ -401,6 +273,15 @@ onUnmounted(() => {
  .prin span{
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .zocalo-text{
+    font-size: 1rem;
+  }
+  .zocalo-text h3{
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -131,24 +131,8 @@ import ServiciosCards from './ServiciosCards.vue'
     background-color: #ff8c00;
 }
 
-.mision-images {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-}
-
-.mision-images img {
+.img-pc img{
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.mision-images img:nth-child(3) {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    height: 415px;
 }
 .img-movil{
     display: none;
@@ -249,11 +233,6 @@ import ServiciosCards from './ServiciosCards.vue'
         height: 300px;
         margin-top: 20px;
     }
-}
-
-
-@media screen and (max-width: 1024px) {
-
 }
 
 @media screen and (max-width: 786px) {
