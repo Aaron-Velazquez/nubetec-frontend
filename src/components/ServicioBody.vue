@@ -26,10 +26,11 @@
     <section class="servicio-pul">
       <div class="pul-text dos">
         <h3>Aplicación a Tasa Variable</h3>
-        <span>Agricultura precisa</span>
-        <p>Realizamos pulverización y siembra con precisión excepcional, cubriendo grandes extensiones de terreno de forma eficiente.
-
-          Optimiza tus costos, mejora tus rendimientos y moderniza tu operación agrícola con Nubetec.</p>
+        <span>Beneficios de la Tasa Variable</span>
+        <p><b>Eficiencia:</b> Menos desperdicio, más ahorro.<br>
+          <b>Precisión:</b> Insumos exactos para cada cultivo.<br>
+          <b>Flexibilidad:</b> Dosis adaptadas a cada parcela.
+          </p>
           <a href="https://wa.me/595992264576?text=Hola%20%21%20Estoy%20interesado%20en%20el%20servicio%20de%20Aplicaci%C3%B3n%20a%20Tasa%20Variable.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20detallada.%20Gracias.
 ">Me interesa <img src="/img/flechita.svg" alt="flecha"></a>
       </div>
@@ -44,7 +45,7 @@
     <section class="zocalo segundo">
       <div class="zocalo-text">
         <h3>Fotogrametría</h3>
-        <p>Nuestros sistemas generan mapas, planos y modelos 3D detallados, brindando información valiosa para optimizar el manejo de cultivos y recursos.</p>
+        <p>Nuestros sistemas generan mapas, planimetrías y altimetrías detalladas, brindando información valiosa para optimizar el manejo de cultivos y recursos.</p>
       </div>
       <figure>
         <img src="/img/mavic3.webp" alt="Fotogrametría">
@@ -166,6 +167,7 @@
 }
 .pul-text{
   display: flex;
+  color: var(--dark-green);
   gap: 1.5vh;
   flex-direction: column;
   width: 35vw;
