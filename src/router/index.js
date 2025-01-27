@@ -8,23 +8,39 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Inicio'
+    }
   },
   {
     path: '/nosotros',
     name: 'Nosotros',
-    component: About
+    component: About,
+    meta: {
+      title: 'Nosotros'
+    }
   },
   {
     path: '/servicios',
     name: 'Services',
-    component: Services
+    component: Services,
+    meta: {
+      title: 'Servicios'
+    }
   },
   {
     path: '/contacto',
     name: 'Contacto',
-    component: Contacto
+    component: Contacto,
+    meta: {
+      title: 'Contacto'
+    }
   },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: { name: 'Home' }
+  }
 ]
 
 const router = createRouter({

@@ -13,66 +13,38 @@ const form = ref({
 const successMessage = ref('');
 const errorMessage = ref('');
 
-// const submitForm = async () => {
-//     try {
-//         const response = await fetch('/contacto', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-//             },
-//             body: JSON.stringify(form.value)
-//         });
+const submitForm = async () => {
+    try {
+        const response = await fetch('api.nubetec.com.py/api/contacts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            },
+            body: JSON.stringify(form.value)
+        });
 
-//         if (response.ok) {
-//             const data = await response.json();
-//             successMessage.value = data.message;
-//             errorMessage.value = '';
-//             form.value = { nombre: '', apellido: '', email: '', message: '' };
-//         } else {
-//             const errorData = await response.json();
-//             errorMessage.value = errorData.errors
-//                 ? Object.values(errorData.errors).flat().join(' ')
-//                 : 'Hubo un error al enviar el formulario.';
-//                 successMessage.value = '';
-//             }
-//         } catch (error) {
-//             errorMessage.value = 'Hubo un error al enviar el formulario.';
-//             successMessage.value = '';
-//             console.error(error);
-//         }
-//     };
+        if (response.ok) {
+            const data = await response.json();
+            successMessage.value = data.message;
+            errorMessage.value = '';
+            form.value = { nombre: '', apellido: '', email: '', mensaje: '' };
+        } else {
+            const errorData = await response.json();
+            errorMessage.value = errorData.errors
+                ? Object.values(errorData.errors).flat().join(' ')
+                : 'Hubo un error al enviar el formulario.';
+                successMessage.value = '';
+            }
+        } catch (error) {
+            errorMessage.value = 'Hubo un error al enviar el formulario.';
+            successMessage.value = '';
+            console.error(error);
+        }
+    };
 </script>
 
 <template>
-    <!-- <div class="contact-form">
-        <h2>Contáctanos</h2>
-        <form @submit.prevent="submitForm">
-            <div>
-                <label for="name">Nombre:</label>
-                <input type="text" v-model="form.nombre" id="name" required />
-            </div>
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" v-model="form.apellido" id="subject" required />
-            </div>
-            <div>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" v-model="form.email" id="email" required />
-            </div>
-            <div>
-                <label for="message">Mensaje:</label>
-                <textarea v-model="form.mensaje" id="message" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-        <div v-if="successMessage" class="success">
-            {{ successMessage }}
-        </div>
-        <div v-if="errorMessage" class="error">
-            {{ errorMessage }}
-        </div>
-    </div> -->
 
     <div class="formulario-de-contacto">
         <div class="contacto-text">
@@ -80,21 +52,21 @@ const errorMessage = ref('');
             <span>Atendemos tu solicitud lo antes posible.</span>
         </div>
         <div class="contacto-row">
-            <form class="contactForm">
+            <form class="contactForm" @submit.prevent="submitForm">
                 <div class="form-row">
                     <div class="form-column">
                         <label>Nombre</label>
-                        <input id="nombre" type="text" name="nombre" required>
+                        <input id="nombre" type="text" name="nombre" required v-model="form.nombre">
                     </div>
                     <div class="form-column">
                         <label>Apellido</label>
-                        <input id="apellido" type="text" name="apellido" required>
+                        <input id="apellido" type="text" name="apellido" required v-model="form.apellido">
                     </div>
                 </div>
                 <label>Correo</label>
-                <input id="mail" type="email" name="correo" required>
+                <input id="mail" type="email" name="correo" required v-model="form.email">
                 <label id="mensaje" class="textArea">Mensaje</label>
-                <textarea class="textArea" type="text" name="mensaje" required/>
+                <textarea class="textArea" type="text" name="mensaje" required v-model="form.mensaje" />
                 <input type="submit" value="Enviar">
             </form>
             <!-- <div class="enviado">
@@ -105,13 +77,13 @@ const errorMessage = ref('');
                 <div class="call-us">
                     <span class="title">Llámanos</span>
                     <span>Te atendemos en horario de oficina.</span>
-                    <span onclick="window.location.href = 'tel:+595973236438'">(0973) 236-438</span>
+                    <span onclick="window.location.href = 'tel:+595992264576'">(+595) 992 264 576</span>
                 </div>
                 <div class="social-media">
                     <span class="title">
                         Conocenos
                     </span>
-                    <span>Leemos tus mensajes en redes sociales.</span>
+                    <span>Leemos tus mensajes en nuestras redes sociales.</span>
                     <!-- <figure>
                         <img src="https://conversa.com.py/img/social-instagram.svg" alt="instagram" onclick="window.location.href = 'https://www.instagram.com/conversa_py?igsh=Znh6OHI3NnJ6ajk4'"><img src="https://conversa.com.py/img/social-facebook.svg" alt="facebok" onclick="window.location.href = 'https://www.facebook.com/61553693372809'"><img src="https://conversa.com.py/img/social-whatsapp.svg" alt="whatsapp" onclick="window.open('https://api.whatsapp.com/send?phone=+595973236438&text=Buenas%2C+estoy+interesado+en+una+landing+page+personalizada', '_blank');"> 
                     </figure> -->
@@ -200,15 +172,17 @@ const errorMessage = ref('');
     padding: 1vh 0;
     border: none;
     border-bottom: 2px var(--dark-green) solid;
+    color: var(--dark-green);
     outline: 0px solid transparent;
 }
 .contacto-row input[type="text"], textarea,input[type="email"]{
- font-size: 1rem;
+    font-size: 1rem;
 }
 textarea.textArea{
     outline: 0px solid transparent;
     border: none;
     border-bottom: 2px var(--dark-green) solid;
+    color: var(--dark-green);
     padding-bottom: 5vh;
 
 }
