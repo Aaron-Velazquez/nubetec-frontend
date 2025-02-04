@@ -1,5 +1,6 @@
 <script setup>
 import BaseHeader from './BaseHeader.vue';
+import BaseFooter from './BaseFooter.vue';
 import ContactoBody from './ContactForm.vue';
 
 </script>
@@ -12,4 +13,6 @@ import ContactoBody from './ContactForm.vue';
     imagen="img/contacto_principal.webp"
 ></BaseHeader>
     <ContactoBody></ContactoBody>
+  <BaseFooter></BaseFooter>
+
 </template>

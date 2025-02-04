@@ -23,7 +23,7 @@
         <div class="contacto">
             <h4>Información de Contacto</h4>
             <div class="direccion" onclick="window.location.href='https://g.co/kgs/1bJY9ny'"><img src="/img/ubicacion.webp" alt="GPS"><span>Centro comercial Paraná Country Club, Edificio Jeane Paris oficina 5</span></div>
-            <div class="mail"  onclick="window.location.href='mailto:belen@nubetec.com.py'"><img src="/img/email.webp" alt="Mail"><span>belen@nubetec.com.py</span></div>
+            <div class="mail"  onclick="window.location.href='mailto:contacto@nubetec.com.py'"><img src="/img/email.webp" alt="Mail"><span>contacto@nubetec.com.py</span></div>
             <div class="telefono" onclick="window.location.href='tel:+595992264576'" ><img src="/img/telefono.svg" alt="Teléfono"><span>+595992264576</span></div>
         </div>
         <div class="redes">

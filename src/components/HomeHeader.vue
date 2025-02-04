@@ -43,8 +43,8 @@ const toggleMenu = () => {
 
 .main-container{
     height: 80vh;
-    background: linear-gradient(rgba(32, 102, 92, 0.5), rgba(32, 102, 92, 0.5)), 
-    url('/img/principal.webp') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), 
+    url('/img/principal.webp') no-repeat center right;
     background-size: cover;
     padding: 0.1px;
 }
@@ -86,14 +86,15 @@ nav a {
 }
 
 .main-header {
+  text-align: center;
     width: 70vw;
     color: #fff;
     margin: 17vh auto;
 }
 
 .main-header h1{
-    margin: 2vh 0;
-    text-shadow: 1px 2px 2px #000;
+    margin: 2vh auto;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.5);
     font-size: 4rem;
     line-height: 110%;
     width: 35rem;
@@ -106,7 +107,7 @@ nav a {
     display: block;
     width: 145px;
     font-weight: 500;
-    margin: 2vh 0;
+    margin: 2vh auto;
     color: #fff;
     padding: 10px 20px;
     border-radius: 12px;
@@ -115,6 +116,7 @@ nav a {
     background-position: left bottom;
     transition: background-position 0.4s ease;
     box-shadow: 1px 2px 1px #000;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
 }
 
 .main-header a:hover{

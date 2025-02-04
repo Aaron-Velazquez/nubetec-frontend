@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
     "gsap": "^3.12.5",
     "swiper": "^11.1.14",
     "vue": "^3.5.10",

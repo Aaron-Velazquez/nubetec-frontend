@@ -1,5 +1,6 @@
 <script setup>
 import BaseHeader from './BaseHeader.vue';
+import BaseFooter from './BaseFooter.vue';
 import ServicioBody from './ServicioBody.vue';
 
 </script>
@@ -12,4 +13,6 @@ import ServicioBody from './ServicioBody.vue';
     imagen="img/servicios (1).webp"
     ></BaseHeader>
     <ServicioBody></ServicioBody>
+  <BaseFooter></BaseFooter>
+
 </template>
