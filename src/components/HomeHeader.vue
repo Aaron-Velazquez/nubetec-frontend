@@ -43,8 +43,8 @@ const toggleMenu = () => {
 
 .main-container{
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), 
-    url('/img/principal.webp') no-repeat center right;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), 
+    url('/img/index-img.webp') no-repeat center right;
     background-size: cover;
     padding: 0.1px;
 }
@@ -76,6 +76,7 @@ nav ul .contacto {
     background-color: var(--strong-yellow);
     transition: background-color 0.4s;
     box-shadow: 2px 1px 1px rgb(0, 0, 0,0.5);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0, 0.3);
 }
 nav ul .contacto:hover {
     background-color: var(--dark-green);
@@ -86,14 +87,13 @@ nav a {
 }
 
 .main-header {
-  text-align: center;
     width: 70vw;
     color: #fff;
     margin: 17vh auto;
 }
 
 .main-header h1{
-    margin: 2vh auto;
+    margin: 2vh 0;
     text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.5);
     font-size: 4rem;
     line-height: 110%;
@@ -104,10 +104,9 @@ nav a {
     color: var(--strong-yellow);
 }
 .main-header a{
-    display: block;
-    width: 145px;
+    display: inline-block;
     font-weight: 500;
-    margin: 2vh auto;
+    margin: 2vh 0;
     color: #fff;
     padding: 10px 20px;
     border-radius: 12px;

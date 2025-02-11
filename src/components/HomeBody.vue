@@ -26,7 +26,7 @@ import ServiciosCards from './ServiciosCards.vue'
             <a href="/contacto">Contactanos</a>
         </div>
         <figure class="img-pc">
-            <img src="/img/el tipo.webp" alt="Un Agrónomo mirando al horizonte">
+            <img src="/img/cta-dron.webp" alt="Un Agrónomo mirando al horizonte">
         </figure>
     </div>
 </template>
@@ -140,7 +140,7 @@ import ServiciosCards from './ServiciosCards.vue'
 
 .cta-home {
     position: relative;
-    max-width: 1200px;
+    max-width: 70vw;
     margin: 15vh auto;
     border-radius: 12px;
     color: white;
@@ -205,7 +205,7 @@ import ServiciosCards from './ServiciosCards.vue'
 
 .cta-home figure {
     position: absolute;
-    bottom: -7px;
+    bottom: 0;
     right: 0;
     width: 35%;
     margin: 0;
