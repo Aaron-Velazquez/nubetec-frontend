@@ -139,8 +139,7 @@ import ServiciosCards from './ServiciosCards.vue'
 }
 
 .cta-home {
-    position: relative;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: 15vh auto;
     border-radius: 12px;
     color: white;
@@ -152,38 +151,26 @@ import ServiciosCards from './ServiciosCards.vue'
     align-items: center;
 }
 
-.cta-home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 12px;
-    z-index: 1;
-}
-
 .home-text {
-    position: relative;
     z-index: 2;
     padding: 40px;
     width: 60%;
 }
 
 .home-text span {
-    font-size: 14px;
+    font-size: 0.8rem;
     display: block;
     margin-bottom: 10px;
 }
 
 .home-text h3 {
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0 0 20px;
     line-height: 1.2;
 }
 
 .home-text p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -204,12 +191,7 @@ import ServiciosCards from './ServiciosCards.vue'
 }
 
 .cta-home figure {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     width: 35%;
-    margin: 0;
-    z-index: 2;
 }
 
 .cta-home img {
@@ -219,7 +201,7 @@ import ServiciosCards from './ServiciosCards.vue'
     object-position: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     
     .mision-text {
@@ -235,7 +217,7 @@ import ServiciosCards from './ServiciosCards.vue'
     }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 800px) {
 
 .mision{
     flex-direction: column;
@@ -266,12 +248,12 @@ import ServiciosCards from './ServiciosCards.vue'
 .cta-home{
     flex-direction: column;
     gap: 3vh;
-    width: 100%;
-    margin: 10vh auto;
+    margin: 10vh 0;
     height: auto;
     background: none;
     color: var(--dark-green);
     text-align: center;
+    max-width: 100%;
 }
 .home-text {
     padding: 0;
@@ -279,12 +261,10 @@ import ServiciosCards from './ServiciosCards.vue'
     width: 80vw;
 }
 .cta-home figure{
-    border: 0;
     background: url('/img/rectangulo_cel.webp');
     width: 100%;
 }
 .cta-home figure img, .cta-home figure{
-    overflow: hidden;
     object-fit: contain;
 }
 }

@@ -26,69 +26,6 @@
         </div>
       </transition>
   
-      <!-- Formulario de creación/edición -->
-      <div class="form-card" :class="{ 'editing': editingContact }">
-        <form @submit.prevent="handleSubmit">
-          <div class="form-grid">
-            <div class="form-group">
-              <label>Nombre</label>
-              <input 
-                v-model="form.nombre" 
-                type="text" 
-                required
-                class="form-input"
-                :class="{ 'editing': editingContact }"
-              />
-            </div>
-            <div class="form-group">
-              <label>Apellido</label>
-              <input 
-                v-model="form.apellido" 
-                type="text" 
-                required
-                class="form-input"
-                :class="{ 'editing': editingContact }"
-              />
-            </div>
-            <div class="form-group full-width">
-              <label>Email</label>
-              <input 
-                v-model="form.email" 
-                type="email" 
-                required
-                class="form-input"
-                :class="{ 'editing': editingContact }"
-              />
-            </div>
-            <div class="form-group full-width">
-                <label>Mensaje</label>
-                <textarea 
-                  v-model="form.mensaje" 
-                  rows="3"
-                  class="form-input"
-                ></textarea>
-              </div>              
-          </div>
-          
-          <div class="form-actions">
-            <button 
-              type="submit"
-              class="btn btn-primary"
-            >
-              {{ editingContact ? 'Actualizar' : 'Crear' }}
-            </button>
-            <button 
-              type="button" 
-              v-if="editingContact" 
-              @click="cancelEdit"
-              class="btn btn-secondary"
-            >
-              Cancelar
-            </button>
-          </div>
-        </form>
-      </div>
-  
       <!-- Listado de contactos -->
       <div class="table-container">
         <table>
@@ -249,34 +186,6 @@
   const cancelEdit = () => {
     editingContact.value = null
     form.value = { ...initialForm }
-  }
-  
-  // 4) Actualizar contacto (UPDATE)
-  const updateContact = async () => {
-    try {
-      if (!editingContact.value) return
-  
-      const { data, error } = await supabase
-        .from('contacts')
-        .update({ 
-          nombre: form.value.nombre,
-          apellido: form.value.apellido,
-          email: form.value.email,
-            mensaje: form.value.mensaje
-        })
-        .eq('id', editingContact.value.id)
-  
-      if (error) {
-        showMessage('error', error.message)
-      } else {
-        showMessage('success', 'Contacto actualizado exitosamente')
-        cancelEdit()
-        loadContacts()
-      }
-    } catch (error) {
-      showMessage('error', 'Error al actualizar el contacto')
-      console.error(error)
-    }
   }
   
   // 5) Eliminar contacto (DELETE)
